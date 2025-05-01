@@ -264,7 +264,7 @@
     -->
 
     <p style="margin-top: 10px; font-style: italic;">Gunakan Waze atau Google Maps sebagai panduan ke lokasi dewan. Setelah tiba di lokasi, 
-    parking valet telah disediakan untuk semua tetamu.</p>
+    parking valet akan disediakan untuk semua tetamu.</p>
   </div>
 </div>
 
@@ -386,14 +386,14 @@
           <option value="1">Just Me (1 Person)</option>
           <option value="2">Me + 1 Guest (2 People)</option>
         </select>
-        <small style="font-style: italic; color: #888;">
+        <!--<small style="font-style: italic; color: #888;">
           <div class="attendance-note">* Limited to 2 adults only. No children, please.</div>
-        </small>
+        </small> -->
         
       </div>
       
 
-      <textarea name="wishes" placeholder="Leave us a message (optional)"></textarea>
+      <textarea name="wishes" placeholder="wishes (optional)"></textarea>
 
       <div class="form-actions">
         <button type="submit">Submit</button>
@@ -471,7 +471,7 @@
 
 
 
-  const countdownDate = new Date("May 25, 2025 13:00:00").getTime();
+  const countdownDate = new Date("May 25, 2025 12:30:00").getTime();
   const timer = document.getElementById("timer");
 
   setInterval(() => {
@@ -541,7 +541,7 @@ function handleModalClick(event, modalId) {
 
 <!-- Modal Logic + Submit Handler -->
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwvB8WawQZi__nsku8czsHTAtJ3Z7-REgh1Q0XdavU47dR78d1rZ-WtzLx8R9HZzOM/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwgwJp4H_6alkiDO2pAt9wQppXlLvFBMOFakirIlYrY2XrrMDFO54kFpdaW6CiMskGm/exec';
   const form = document.getElementById("rsvpForm");
 
   form.addEventListener("submit", e => {
