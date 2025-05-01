@@ -38,6 +38,15 @@ body {
   transform: translateX(100%);
 }
 
+.and-divider {
+  margin: 36px 0 20px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+
+
+
 .open-btn {
   position: absolute;
   top: 50%;
