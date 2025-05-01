@@ -96,28 +96,27 @@
   
 </section> 
 
+<!-- CALENDAR MODAL -->
 <div id="calendarModal" class="modal" onclick="handleModalClick(event, 'calendarModal')">
   <div class="modal-content calendar-modal">
     <span class="close" onclick="closeModal('calendarModal')">&times;</span>
     <h3>25.05.2025</h3>
-    <p>11:00 petang – 4:00 petang</p>
+    <p>11:30 pagi – 3:30 petang</p>
 
     <div class="calendar-links-minimal">
       <a href="assets/fairuzIzzatiics.ics" class="calendar-min-btn" download>
         <img src="assets/apple-icon.png" alt="Apple Icon" />
-        <span>Calendar</span>
+        <span>Apple Calendar</span>
       </a>
     
       <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Majlis+Perkahwinan+Fairuz+%26+Izzati&dates=20250525T040000Z/20250525T080000Z&details=Majlis+akad+nikah+dan+makan+beradab+di+Evanthea+Wedding+Hall&location=Evanthea+Wedding+Hall" target="_blank" class="calendar-min-btn">
         <img src="assets/google-icon.png" alt="Google Icon" />
-        <span>Calendar</span>
-      </a>
-    </div>
-    
+        <span>Google Calendar</span>
       </a>
     </div>
   </div>
 </div>
+
 
 
 
@@ -448,16 +447,20 @@
   music.play();
   document.getElementById('musicToggle').textContent = '🔊';
 
+  // Hide ALL modals just in case
+  document.querySelectorAll('.modal').forEach(modal => {
+    modal.style.display = 'none';
+  });
+
   setTimeout(() => {
     gateLeft.style.display = "none";
     gateRight.style.display = "none";
     mainContent.classList.remove("hidden");
-
-    // ✅ Show the mute button here
     document.getElementById("musicToggle").style.display = "block";
     setInterval(createPetal, 400);
-  }, 1200); // Make sure this matches your gate animation duration
+  }, 1200);
 }
+
 
 
 
@@ -475,12 +478,13 @@
   }, 1000);
 
   function openModal(id) {
-    document.getElementById(id).style.display = 'flex';
-  }
+  document.getElementById(id).style.display = 'flex';
+}
 
-  function closeModal(id) {
-    document.getElementById(id).style.display = 'none';
-  }
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
 
   
 </script>
