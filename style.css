@@ -115,20 +115,23 @@ body {
 
 .ayah-box {
   margin-top: 20px;
+  transform: scale(0.9); /* or try 0.85 for smaller */
+  transform-origin: top center;
 }
 
 .ayah-arabic {
-  max-width: 80%;
+  max-width: 40%; /* reduce image size */
   margin: 10px auto;
 }
 
 .ayah-text {
-  font-size: 14px;
+  font-size: 13px; /* reduced from 14px */
   color: #444;
   font-style: italic;
-  margin-top: 8px;
-  line-height: 1.5;
+  margin-top: 6px;
+  line-height: 1.4;
 }
+
 
 
 .doa-section {
@@ -142,9 +145,10 @@ body {
 
 .bismillah-img {
   width: 160px;
-  margin: 0 auto 20px;
+  margin: 0 auto 0px; /* was likely 20px before */
   opacity: 0.8;
 }
+
 
 .doa-text {
   font-size: 16px;
