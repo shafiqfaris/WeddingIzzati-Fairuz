@@ -43,7 +43,7 @@ body {
   height: clamp(140px, 30vw, 180px);
   border-radius: 50%;
   border: none;
-  background-color: #ffbca8;
+  background-color: #f7e7cee7;
   box-shadow: 0 4px 14px rgba(0,0,0,0.12);
   padding: 0;
   margin: 0;
