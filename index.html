@@ -17,8 +17,8 @@
 <!-- Open Button -->
 <button class="open-btn" onclick="openGate()">
   <div class="open-inner">
-    <div class="open-names">Fairuz & Izzati</div>
-    <div class="open-sub">Tap to Open</div>
+    <div class="open-names">Izzati & Fairuz</div>
+    <div class="open-sub">Buka</div>
   </div>
 </button>
 
@@ -172,7 +172,7 @@
   <!-- Notes for location -->
   <section class="location-note">
     <p><strong>Nota:</strong><br>
-    Jika anda telah tiba di lokasi, sila tekan butang <strong>"Guide"</strong> di bawah untuk mendapatkan panduan masuk ke dewan. Parking Valet
+    Sebaik sahaja anda telah tiba di lokasi, sila tekan butang <strong>"Guide"</strong> di bawah untuk mendapatkan panduan masuk ke dewan. Kemudahan parking valet
     disediakan untuk semua tetamu.</p>
   </section>
   
@@ -201,9 +201,35 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+  <!-- Ucapan Section -->
+  <div class="ucapan-scrollbox">
+    <div class="ucapan-message">
+      <p>"Penat "</p>
+      <strong>Shafiq</strong>
+    </div>
+    <div class="ucapan-message">
+      <p>"Lapar !"</p>
+      <strong>Cheetos</strong>
+    </div>
+    <div class="ucapan-message">
+      <p>"Congrats, semoga bahagia dunia akhirat."</p>
+      <strong>Ibu</strong>
+    </div>
+    <div class="ucapan-message">
+      <p>"Semoga bahagia ke Jannah"</p>
+      <strong>Azizah</strong>
+    </div>
+  </div>
+  
+
   
 </main>
 
+<!-- Load wishes dynamically from CSV -->
+<script src="load-wishes.js"></script>
+<script>
+  loadUcapanFromCSV('wishes.csv', 'ucapan-section');
+</script>
 
 
 <!-- Swiper CSS -->
@@ -426,9 +452,14 @@
   
 
   <a onclick="openModal('rsvpModal')">
-    <!-- your icon here -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+      <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" />
+      <path d="M22 6L12 13L2 6" />
+    </svg>
     <span>RSVP</span>
   </a>
+  
+  
   
 </div>
 
