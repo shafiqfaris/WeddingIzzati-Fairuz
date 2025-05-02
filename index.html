@@ -228,23 +228,23 @@
 </main>
 
 <script>
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-        }
-      });
-    },
-    {
-      root: document.querySelector('.ucapan-scrollbox'),
-      threshold: 0.1
-    }
-  );
+const ucapanObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      }
+    });
+  },
+  {
+    root: document.querySelector('.ucapan-scrollbox'),
+    threshold: 0.1
+  }
+);
 
-  document.querySelectorAll('.ucapan-message').forEach(el => {
-    observer.observe(el);
-  });
+document.querySelectorAll('.ucapan-message').forEach(el => {
+  ucapanObserver.observe(el);
+});
 </script>
 
 
