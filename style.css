@@ -925,6 +925,7 @@ textarea {
   color: #3a3a3a;
 }
 
+
 /* Scrollable box */
 .ucapan-scrollbox {
   max-height: 300px;
@@ -935,7 +936,7 @@ textarea {
   padding-right: 0.5rem;
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #f48fb1 #f0f0f0;
+  scrollbar-color: #ffb443 #f0f0f0;
 }
 
 /* Webkit scrollbar style */
@@ -943,7 +944,7 @@ textarea {
   width: 6px;
 }
 .ucapan-scrollbox::-webkit-scrollbar-thumb {
-  background-color: #f48fb1;
+  background-color: #ffe17c;
   border-radius: 10px;
 }
 .ucapan-scrollbox::-webkit-scrollbar-track {
