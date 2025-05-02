@@ -2,10 +2,10 @@ BEGIN:VCALENDAR
 VERSION:2.0
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-SUMMARY:Majlis Walimatul Urus Fairuz & Izzati
+SUMMARY:Majlis Walimatul Urus Izzati & Fairuz
 DTSTART:20250525T033000Z
 DTEND:20250525T073000Z
 LOCATION:Evanthea Wedding Hall Kuala Lumpur
-DESCRIPTION:Majlis akad nikah dan jamuan makan Fairuz & Izzati di Evanthea Wedding Hall.
+DESCRIPTION:Majlis akad nikah dan jamuan makan Izzati & Fairuz di Evanthea Wedding Hall.
 END:VEVENT
 END:VCALENDAR
