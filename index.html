@@ -202,8 +202,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- Ucapan Section -->
-  <div class="ucapan-scrollbox">
-    <div class="ucapan-message">
+  <section class="ucapan-container">
+    <h2 class="ucapan-title">Ucapan</h2>
+    <div class="ucapan-scrollbox">
+      <div class="ucapan-message">
       <p>"Penat "</p>
       <strong>Shafiq</strong>
     </div>
@@ -220,10 +222,31 @@
       <strong>Azizah</strong>
     </div>
   </div>
-  
+  </section>
 
   
 </main>
+
+<script>
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    },
+    {
+      root: document.querySelector('.ucapan-scrollbox'),
+      threshold: 0.1
+    }
+  );
+
+  document.querySelectorAll('.ucapan-message').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
 
 <!-- Load wishes dynamically from CSV -->
 <script src="load-wishes.js"></script>
