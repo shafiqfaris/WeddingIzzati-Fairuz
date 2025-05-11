@@ -456,7 +456,7 @@ document.querySelectorAll('.ucapan-message').forEach(el => {
     <h3>RSVP & WISHES</h3>
     <form id="rsvpForm">
       <input type="text" name="name" placeholder="Your Full Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="email" name="email" placeholder="Email (optional)">
       <input type="tel" name="phone" placeholder="Phone Number" required />
 
       <select name="status" id="status" required>
@@ -631,7 +631,7 @@ function handleModalClick(event, modalId) {
 
 <!-- Modal Logic + Submit Handler -->
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ0EpyftBm1_YCGpUN9nnDMe1cWOYAK8eI__UpjQK2ODyjkb4hkxssOknAB2zE2HKK/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxDpPOdyjcttES4sSmuZQWuEGBaZpLFi0wIxapCxux09JXWgORao5YcptheXL1oWRHM/exec';
   const form = document.getElementById("rsvpForm");
 
   form.addEventListener("submit", e => {
